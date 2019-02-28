@@ -2,7 +2,8 @@
   "name": "trying-sailci",
   "scripts": {
     "lint": "eslint *.js --fix --format codeframe",
-    "test": "jest"
+    "test": "jest",
+    "now-build": "yarn lint && yarn test"
   },
   "eslintConfig": {
     "extends": "tunnckocore"
