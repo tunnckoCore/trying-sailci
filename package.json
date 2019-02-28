@@ -1,0 +1,32 @@
+{
+  "name": "trying-sailci",
+  "scripts": {
+    "lint": "eslint *.js --fix --format codeframe",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "tunnckocore"
+  },
+  "renovate": {
+    "extends": [
+      "config:base",
+      ":onlyNpm",
+      ":gitSignOff",
+      ":automergePr",
+      ":automergeAll",
+      ":respectLatest",
+      ":rebaseStalePrs",
+      ":semanticCommits",
+      ":semanticCommitTypeAll(fix)",
+      ":disableRateLimiting",
+      ":preserveSemverRanges",
+      ":maintainLockFilesWeekly"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-tunnckocore": "^3.0.0",
+    "jest": "^24.1.0",
+    "prettier": "^1.16.4"
+  }
+}
